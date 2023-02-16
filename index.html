@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/mentor.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Mentoria</title>
+  </head>
+  <body>
+    <div class="header-fundo"></div>
+    <div class="page">
+      <header>
+        <h1>AVALIE A SUA MENTORIA</h1>
+        <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+        <img src="./img/mentor.svg" alt="Logo mentoria " />
+      </header>
+      <form id="idForm">
+        <h2>Informações pessoais</h2>
+        <div class="formulario">
+
+        <fieldset>
+          <div class="nameSobrename">
+            <div class="camposInput">
+              <label for="name">Nome </label>
+              <input type="text" id="name" />
+            </div>
+            <div class="camposInput">
+              <label for="sobrenome">Sobrenome</label>
+              <input type="text" id="sobrenome" />
+            </div>
+          </div>
+          <div class="camposInput">
+            <div class="campo-email">
+            <label for="e-mail"
+              >E-mail <span>(digite um email válido)</span></label
+            >
+            <input type="email" id="e-mail" />
+          </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>INFORMAÇÕES DO MENTOR</legend>
+          <div class="camposInput">
+            <label for="campoSelect">Selecione quem foi o seu mentor</label>
+            <select name="campoSelect" id="campoSelect">
+              <option value="">Selecionar</option>
+              <option value="">Pedro Queiroz</option>
+              <option value="">Felipe Santos</option>
+              <option value="">Maik Brito</option>
+              <option value="">Victor Carrara</option>
+              <option value="">Sorriso</option>
+            </select>
+          </div>
+
+          <div class="camposInput">
+            <label for="textArea">Feedback sobre o mentor</label>
+            <textarea name="" id="textArea"></textarea>
+          </div>
+          <div class="checked">
+            <input type="checkbox" id="checkbox"/>
+            <label for="checkbox"
+              >Todas as minhas dúvidas foram esclarecidas durante a
+              mentoria.</label
+            >
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>AGENDANDO PRÓXIMA MENTORIA </legend>
+          <div class="dataTime">
+          <div class="camposInput">
+            <label for="data">Data</label>
+            <input type="date" id="data">
+          </div>
+
+          <div class="camposInput">
+            <label for="tempo">Das</label>
+            <input type="time" id="tempo">
+          </div>
+          <div class="camposInput">
+            <label for="tempo">Até</label>
+            <input type="time" id="tempo">
+          </div>
+        </div>
+        </fieldset>
+        <button form="idForm">SALVAR</button>
+      </form>
+    </div>
+    </div>
+  </body>
+</html>
